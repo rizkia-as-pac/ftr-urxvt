@@ -1,0 +1,70 @@
+*foreground: #00cc00
+*foreground_bold: #a8a19f
+*cursor: #a8a19f
+*background:       #1b1918
+!!*background: rgba(0, 0, 0, .7)
+
+!! black
+*color0: #1b1918
+*color8: #766e6b
+!! red
+*color1: #f22c40
+*color9: #f22c40
+!! green
+*color2: #5ab738
+*color10: #5ab738
+!! yellow
+*color3: #d5911a
+*color11: #d5911a
+!! blue
+*color4: #407ee7
+*color12: #407ee7
+!! magenta
+*color5: #6666ea
+*color13: #6666ea
+!! cyan
+*color6: #00ad9c
+*color14: #00ad9c
+!! white
+*color7: #a8a19f
+*color15: #f1efee
+
+
+!! URxvt.background:       [70]#000000 # not working yetA
+!! all these settings exist on urxvt --help
+Rxvt.intensityStyles: false
+URxvt.depth:    32
+URxvt*font:     xft:mono:medium:size=10
+URxvt.letterSpace: -1
+URxvt.scrollBar: false
+URxvt.cursorColor: magenta
+URxvt.cursorBlink: true 
+
+!! transparent
+!! transparent is so heavy
+!! URxvt*transparent: true
+!! URxvt*shading: 25
+!! URxvt*inheritPixmap: true
+
+!! Extensions
+!!find /usr -type d -name "urxvt"
+
+URxvt.perl-lib: /usr/bin/urxvt/perl
+!! Disabling Perl extensions: Alternatively, you can explicitly list every extension you need, effectively disabling all others:
+URxvt.perl-ext-common: default,matcher,resize-font,-searchable-scrollback
+
+!! paste = shift + insert  (fn + del) = default
+!! scrooll up = shift + page up
+!! scrooll down = shift + page down
+URxvt.colorUL: #4682B4
+
+!! Matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+!! urxvt function
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-equal: resize-font:bigger
