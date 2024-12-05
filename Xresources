@@ -37,7 +37,7 @@ URxvt.depth:    32
 URxvt*font:     xft:mono:medium:size=10
 URxvt.letterSpace: -1
 URxvt.scrollBar: false
-URxvt.cursorColor: magenta
+URxvt.cursorColor: green 
 URxvt.cursorBlink: true 
 
 !! transparent
@@ -65,6 +65,5 @@ URxvt.matcher.button: 1
 !! urxvt function
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
-
 URxvt.keysym.C-minus: resize-font:smaller
 URxvt.keysym.C-equal: resize-font:bigger
